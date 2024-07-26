@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind 사용자 정의 스타일 설정 */
+@layer base {
+  :root {
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --radius: 0.5rem;
+  }
+}
