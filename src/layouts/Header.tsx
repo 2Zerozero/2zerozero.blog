@@ -16,7 +16,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b-4 fixed w-full">
+    <nav className="border-b-4 w-full">
       <div className="max-w-[1200px] h-16 flex items-center m-auto justify-between">
         {/* 네비게이션 */}
         <div className="flex">
@@ -24,7 +24,7 @@ const Header = () => {
             <Link
               href={navItem.href}
               key={navItem.name}
-              className={cn('mr-6', pathname?.startsWith(navItem.name) ? '' : '')}
+              className={cn('mr-6', pathname?.startsWith(navItem.href) ? 'text-purple-900' : 'text-gray-950')}
             >
               {navItem.name}
             </Link>
