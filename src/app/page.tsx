@@ -1,13 +1,7 @@
-import Header from '@/layouts/Header';
+import { redirect } from 'next/navigation';
 
 const Home = () => {
-  return (
-    <>
-      <Header />
-
-      <div>모드 테스트</div>
-    </>
-  );
+  redirect('/blog');
 };
 
 export default Home;

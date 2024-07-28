@@ -1,5 +1,11 @@
+import Header from '@/layouts/Header';
+
 const Blog = () => {
-  return <div>Blog</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Blog;
